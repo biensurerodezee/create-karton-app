@@ -1,0 +1,30 @@
+{
+  "name": "create-karton-app",
+  "version": "1.0.0",
+  "description": "Create KartonJS Application in one command.",
+  "main": "create-karton-app.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biensurerodezee/create-karton-app.git"
+  },
+  "keywords": [
+    "Create",
+    "KartonJS",
+    "Application",
+    "Command",
+    "scaffold",
+    "app"
+  ],
+  "author": "Biensurerodezee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/biensurerodezee/create-karton-app/issues"
+  },
+  "homepage": "https://github.com/biensurerodezee/create-karton-app#readme",
+  "bin": {
+    "create-karton-app": "./create-karton-app.js"
+  }
+}
