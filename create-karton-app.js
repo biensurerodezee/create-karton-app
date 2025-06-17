@@ -37,7 +37,7 @@ writeFileSync(
       build: "vite build"
     },
     dependencies: {
-      "kartonjs": "^0.1.0",
+      "kartonjs": "^1.0.3",
       "uhtml": "^1.0.0"
     },
     devDependencies: {
