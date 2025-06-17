@@ -30,15 +30,15 @@ writeFileSync(
   path.join(appPath, 'package.json'),
   JSON.stringify({
     name: appName,
-    version: "0.1.0",
+    version: "1.0.0",
     type: "module",
     scripts: {
       start: "vite",
+      dev: "vite",
       build: "vite build"
     },
     dependencies: {
-      "kartonjs": "^1.0.3",
-      "uhtml": "^1.0.0"
+      "kartonjs": "^1.0.3"
     },
     devDependencies: {
       "vite": "^4.0.0"

@@ -1,6 +1,6 @@
 {
   "name": "create-karton-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create KartonJS Application in one command.",
   "main": "create-karton-app.js",
   "scripts": {
