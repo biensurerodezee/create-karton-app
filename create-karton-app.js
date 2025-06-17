@@ -19,14 +19,19 @@ if (existsSync(appPath)) {
 
 console.log(`Creating new KartonJS app in ${appPath}...`);
 
+// Create app dir
 mkdirSync(appPath);
+
+// Create src dir
 mkdirSync(path.join(appPath, 'src'));
 
+// Create a package.json
 writeFileSync(
   path.join(appPath, 'package.json'),
   JSON.stringify({
     name: appName,
     version: "0.1.0",
+    type: "module",
     scripts: {
       start: "vite",
       build: "vite build"
@@ -41,6 +46,16 @@ writeFileSync(
   }, null, 2)
 );
 
+// Create a .gitignore
+writeFileSync(
+  path.join(appPath, '.gitignore'),
+  `node_modules/
+dist/
+.vite/
+`
+);
+
+// Create index.html
 writeFileSync(
   path.join(appPath, 'index.html'),
   `<!DOCTYPE html>
@@ -58,8 +73,9 @@ writeFileSync(
 </html>`
 );
 
+// Create index.js
 writeFileSync(
-  path.join(appPath, 'src', 'app.js'),
+  path.join(appPath, 'src', 'index.js'),
   `import { KartonElement, html } from 'kartonjs';
 
 export class KartonApp extends KartonElement {
@@ -72,12 +88,6 @@ export class KartonApp extends KartonElement {
 }
 
 customElements.define('karton-app', KartonApp);
-`
-);
-
-writeFileSync(
-  path.join(appPath, 'src', 'index.js'),
-  `import './app.js';
 `
 );
 

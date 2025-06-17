@@ -1,6 +1,6 @@
 {
   "name": "create-karton-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create KartonJS Application in one command.",
   "main": "create-karton-app.js",
   "scripts": {
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/biensurerodezee/create-karton-app#readme",
   "bin": {
-    "create-karton-app": "./create-karton-app.js"
+    "create-karton-app": "create-karton-app.js"
   }
 }
